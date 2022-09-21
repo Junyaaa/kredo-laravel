@@ -1,5 +1,14 @@
-version: "3.7"
+version: "3.8"
 services:
+
+  #for M1 chip
+  # mysql:
+  #   image: mysql
+  #   platform: linux/amd64
+  #   restart: always
+  #   ports: 
+  #     - 3306:3306
+
   app:
     build: ./infra/php
     volumes:
